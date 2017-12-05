@@ -61,39 +61,39 @@ public class MenuFragment extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view,int position,long l){
                 switch (position){
                     case 0:
-                        Intent intent = new Intent(getActivity(),Main2Activity.class);
+                        Intent intent = new Intent(getActivity(),Natural.class);
                         startActivity(intent);
                         break;
                     case 1:
-                        Intent intent1 = new Intent(getActivity(),Main3Activity.class);
+                        Intent intent1 = new Intent(getActivity(),Diamond.class);
                         startActivity(intent1);
                         break;
                     case 2:
-                        Intent intent2 = new Intent(getActivity(),Main3Activity.class);
+                        Intent intent2 = new Intent(getActivity(),Nutrena.class);
                         startActivity(intent2);
                         break;
                     case 3:
-                        Intent intent3 = new Intent(getActivity(),Main3Activity.class);
+                        Intent intent3 = new Intent(getActivity(),TheDog.class);
                         startActivity(intent3);
                         break;
                     case 4:
-                        Intent intent4 = new Intent(getActivity(),Main3Activity.class);
+                        Intent intent4 = new Intent(getActivity(),Amio.class);
                         startActivity(intent4);
                         break;
                     case 5:
-                        Intent intent5 = new Intent(getActivity(),Main3Activity.class);
+                        Intent intent5 = new Intent(getActivity(),Esbilac.class);
                         startActivity(intent5);
                         break;
                     case 6:
-                        Intent intent6 = new Intent(getActivity(),Main3Activity.class);
+                        Intent intent6 = new Intent(getActivity(),Seoul.class);
                         startActivity(intent6);
                         break;
                     case 7:
-                        Intent intent7 = new Intent(getActivity(),Main3Activity.class);
+                        Intent intent7 = new Intent(getActivity(),Acana.class);
                         startActivity(intent7);
                         break;
                     case 8:
-                        Intent intent8 = new Intent(getActivity(),Main3Activity.class);
+                        Intent intent8 = new Intent(getActivity(),Purina.class);
                         startActivity(intent8);
                         break;
                     case 9:

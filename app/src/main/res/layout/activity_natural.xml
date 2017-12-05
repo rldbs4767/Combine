@@ -8,7 +8,7 @@
 
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -17,6 +17,7 @@
         android:layout_marginTop="8dp"
         android:background="?android:attr/textColorHighlightInverse"
         android:text="Natural balance"
+        android:textColor="#FF0080"
         android:textAppearance="@style/TextAppearance.AppCompat.Title"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -46,6 +47,44 @@
         android:orientation="vertical"
         tools:layout_editor_absoluteY="0dp"
         tools:layout_editor_absoluteX="20dp" />
+
+    <Button
+        android:id = "@+id/button1"
+        android:layout_width="289dp"
+        android:layout_height="169dp"
+        android:layout_gravity = "center_horizontal"
+        android:drawableLeft="@drawable/natural"
+        android:drawablePadding="5dp"
+        android:text="Sweet potato, Salmon / 1.36kg"
+        app:layout_constraintTop_toTopOf="@+id/guideline8"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id = "@+id/button2"
+        android:layout_width="289dp"
+        android:layout_height="169dp"
+        android:layout_gravity = "center_horizontal"
+        android:drawableLeft="@drawable/natural2"
+        android:drawablePadding="5dp"
+        android:text="Chicken, Sweet potato / 170g"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintTop_toTopOf="@+id/guideline13"
+        android:layout_marginTop="8dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline13"
+        app:layout_constraintGuide_begin="240dp"
+        android:orientation="horizontal" />
 
 
 </android.support.constraint.ConstraintLayout>

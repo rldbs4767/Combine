@@ -8,11 +8,16 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
+import android.widget.Toast;
 
 //(1:1) dog information  class
 
 public class Dog_information extends AppCompatActivity {
-
+    private void DisplayToast(String msg)
+    {
+        Toast.makeText(getBaseContext(), msg,
+                Toast.LENGTH_SHORT).show();
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,13 +52,45 @@ public class Dog_information extends AppCompatActivity {
         final CheckBox check13 = (CheckBox) findViewById(R.id.checkF3);
 
 
+        check2.setOnClickListener(new CheckBox.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(check1.isChecked()==true || check3.isChecked()==true){
+                    DisplayToast("Just click one");
+                    check2.setChecked(false);
+                }
+            }});
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (check1.isChecked() == true && check4.isChecked() == true && check7.isChecked() == true && check11.isChecked() == true) {
+
+
+                if (((check1.isChecked() == true && check4.isChecked()==true)&& check10.isChecked()==true) && check11.isChecked()==true ){
+                    //main2->아카나1 성분창으로
+                    Intent intent = new Intent(Dog_information.this, hong3Activity.class);
+                    startActivity(intent);
+                }
+                else if (((check2.isChecked() == true && check5.isChecked()==true) && check9.isChecked()==true) && check11.isChecked()==true ) {
+                    //main2->아카나2 성분창으로
                     Intent intent = new Intent(Dog_information.this, Main2Activity.class);
                     startActivity(intent);
                 }
+                else if (((check3.isChecked() == true && (check4.isChecked()==true || check5.isChecked()== true)) && check10.isChecked()==true) && check11.isChecked()==true  ) {
+                    //main2->뉴트리나2 성분창으로
+                    Intent intent = new Intent(Dog_information.this, Main2Activity.class);
+                    startActivity(intent);
+                }
+                else if (((check3.isChecked() == true && check6.isChecked()==true) && check10.isChecked()==true) && check11.isChecked()==true ) {
+                    //main2->뉴트리나1 성분창으로
+                    Intent intent = new Intent(Dog_information.this, Main2Activity.class);
+                    startActivity(intent);
+                }
+                else{
+                    DisplayToast("None information");
+                }
+
+
             }
         });
     }

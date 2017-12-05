@@ -17,11 +17,9 @@ import android.widget.Button;
 //(function)
 public class MatchFragment extends Fragment {
 
-
     public MatchFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -36,7 +34,7 @@ public class MatchFragment extends Fragment {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), My_information.class);
+                Intent intent = new Intent(getActivity(), ProfileActivity.class);
                 startActivity(intent);
             }
         });
@@ -50,7 +48,7 @@ public class MatchFragment extends Fragment {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), Interested_product.class);
+                Intent intent = new Intent(getActivity(), BasketActivity.class);
                 startActivity(intent);
             }
         });

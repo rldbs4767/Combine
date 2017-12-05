@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?android:attr/textColorHighlight"
+    android:background="#FBEFF8"
     tools:context="com.example.myapplication.Intro">
 
     <TextView
@@ -16,12 +16,30 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:text="Bow Wow"
+        android:textColor="#FF0080"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.407" />
+        app:layout_constraintVertical_bias="0.221" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="246dp"
+        android:layout_height="235dp"
+        app:srcCompat="@drawable/bowwow"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintTop_toTopOf="@+id/guideline7"
+        android:layout_marginTop="8dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline7"
+        app:layout_constraintGuide_begin="197dp"
+        android:orientation="horizontal" />
 
 </android.support.constraint.ConstraintLayout>
