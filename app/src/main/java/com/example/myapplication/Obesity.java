@@ -24,14 +24,14 @@ public class Obesity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Obesity.this, hong2Activity.class);
+                Intent intent = new Intent(Obesity.this, hong10Activity.class);
                 startActivity(intent);
             }
         });
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Obesity.this, Main2Activity.class);
+                Intent intent = new Intent(Obesity.this, hong5Activity.class);
                 startActivity(intent);
             }
         });

@@ -13,6 +13,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
+//acana
 public class hong3Activity extends AppCompatActivity {
 
     information User = new information();
@@ -21,14 +22,12 @@ public class hong3Activity extends AppCompatActivity {
     FirebaseDatabase database;
     FirebaseAuth firebaseAuth;
 
-    TextView tvMessage;
     TextView explain;
     //관심상품에 담을 상품목록
     Button naturalButton;
 
-
-
     public static int i = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,7 +35,6 @@ public class hong3Activity extends AppCompatActivity {
 
         i++;
         firebaseAuth = FirebaseAuth.getInstance();
-        tvMessage = (TextView)findViewById(R.id.tv_message);
         explain = (TextView)findViewById(R.id.explain);
 
         explain.setText("무게 = 2kg\n 원산지 = 중국\n");
@@ -58,7 +56,7 @@ public class hong3Activity extends AppCompatActivity {
             }
         }
 
-        if (User.acana[i] == 1) {
+        if (User.nutrena[i] == 1) {
             naturalButton.setText("nonlike");
 
         }
@@ -67,18 +65,18 @@ public class hong3Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                (User.acana[i])++;
+                (User.nutrena[i])++;
 
-                if (User.acana[i] == 1) {
-                    writeUserlike("acana", currentUser);
+                if (User.nutrena[i] == 1) {
+                    writeUserlike("nutrena", currentUser);
                     naturalButton.setText("nonlike");
-                    User.acana[i] = 1;
+                    User.nutrena[i] = 1;
 
                 }
-                else if (User.acana[i] > 1) {
-                    writeUserunlike("not acana", currentUser);
+                else if (User.nutrena[i] > 1) {
+                    writeUserunlike("not nutrena", currentUser);
                     naturalButton.setText("Basket");
-                    User.acana[i] = 0;
+                    User.nutrena[i] = 0;
 
                 }
 

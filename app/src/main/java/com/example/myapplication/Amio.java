@@ -23,7 +23,7 @@ public class Amio extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Amio.this, Main2Activity.class);
+                Intent intent = new Intent(Amio.this, hong5Activity.class);
                 startActivity(intent);
             }
         });

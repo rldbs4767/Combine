@@ -96,15 +96,16 @@ public class MenuFragment extends Fragment {
                         Intent intent8 = new Intent(getActivity(),Purina.class);
                         startActivity(intent8);
                         break;
+                    /*
                     case 9:
-                        Intent intent9 = new Intent(getActivity(),Main3Activity.class);
+                        Intent intent9 = new Intent(getActivity(),Main3Activ.class);
                         startActivity(intent9);
                         break;
                     case 10:
                         Intent intent10 = new Intent(getActivity(),Main3Activity.class);
                         startActivity(intent10);
                         break;
-
+*/
                     default:
                 }
             }

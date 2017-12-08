@@ -1,7 +1,7 @@
 package com.example.myapplication;
 
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -13,7 +13,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-public class upgradeActivity extends AppCompatActivity {
+//natural
+public class hong4Activity extends AppCompatActivity {
 
     information User = new information();
 
@@ -21,25 +22,24 @@ public class upgradeActivity extends AppCompatActivity {
     FirebaseDatabase database;
     FirebaseAuth firebaseAuth;
 
-    TextView tvMessage;
+    TextView explain;
     //관심상품에 담을 상품목록
-    Button pizzaButton;
-    Button mealButton;
+    Button naturalButton;
 
 
     public static int i = 0;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_upgrade);
+        setContentView(R.layout.activity_hong4);
 
         i++;
         firebaseAuth = FirebaseAuth.getInstance();
-        tvMessage = (TextView)findViewById(R.id.tv_message);
+        explain = (TextView)findViewById(R.id.explain);
 
-        pizzaButton = (Button)findViewById(R.id.pizzaButton);
-        mealButton = (Button)findViewById(R.id.mealButton);
+        explain.setText("무게 = 2kg\n 원산지 = 중국\n");
+        naturalButton = (Button)findViewById(R.id.naturalButton);
+
         database = FirebaseDatabase.getInstance();
 
         FirebaseUser user = firebaseAuth.getCurrentUser();
@@ -48,69 +48,42 @@ public class upgradeActivity extends AppCompatActivity {
 
         User.email[i] = user.getEmail();
 
-            for(int j = 0; j<=i; j++) {
+        for(int j = 0; j<=i; j++) {
 
-                if (currentUser.equals(User.email[j])) {
-                    i = j;
-                    break;
-                }
+            if (currentUser.equals(User.email[j])) {
+                i = j;
+                break;
             }
+        }
 
-            if (User.pizzalike[i] == 1) {
-                pizzaButton.setText("nonlike");
+        if (User.the_dog[i] == 1) {
+            naturalButton.setText("nonlike");
 
-            }
+        }
 
-            if (User.meallike[i] == 1) {
-                mealButton.setText("nonlike");
-            }
-
-        //버튼 이벤트
-        pizzaButton.setOnClickListener(new View.OnClickListener() {
+        naturalButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                (User.pizzalike[i])++;
+                (User.the_dog[i])++;
 
-                if (User.pizzalike[i] == 1) {
-                    writeUserlike("pizza", currentUser);
-                    pizzaButton.setText("nonlike");
-                    User.pizzalike[i] = 1;
-
-                }
-                else if (User.pizzalike[i] > 1) {
-                    writeUserunlike("not pizza", currentUser);
-                    pizzaButton.setText("pizza");
-                    User.pizzalike[i] = 0;
+                if (User.the_dog[i] == 1) {
+                    writeUserlike("the_dog", currentUser);
+                    naturalButton.setText("nonlike");
+                    User.the_dog[i] = 1;
 
                 }
+                else if (User.the_dog[i] > 1) {
+                    writeUserunlike("not the_dog", currentUser);
+                    naturalButton.setText("Basket");
+                    User.the_dog[i] = 0;
+
+                }
+
+
 
             }
         });
-
-        mealButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                User.meallike[i]++;
-
-                if(User.meallike[i] == 1)
-                {
-                    writeUserlike("meal",currentUser);
-                    mealButton.setText("nonlike");
-                    User.meallike[i] = 1;
-
-                }
-                else if(User.meallike[i] != 1)
-                {
-                    writeUserunlike("not meal",currentUser);
-                    mealButton.setText("meal");
-                    User.meallike[i] = 0;
-                }
-
-            }
-        });
-
 
     }
     //좋아하는 품목 or 품목을 취소하는 함수(사용자가 누군지 알기위해)
@@ -130,8 +103,4 @@ public class upgradeActivity extends AppCompatActivity {
         String formattedDate = df.format(c.getTime());
         FirebaseDatabase.getInstance().getReference("like?").child(formattedDate).setValue(user);
     }
-
 }
-
-
-

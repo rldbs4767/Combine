@@ -13,8 +13,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-//purina
-public class hong2Activity extends AppCompatActivity {
+//natural
+public class hong9Activity extends AppCompatActivity {
 
     information User = new information();
 
@@ -32,7 +32,7 @@ public class hong2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hong2);
+        setContentView(R.layout.activity_hong9);
 
         i++;
         firebaseAuth = FirebaseAuth.getInstance();
@@ -57,7 +57,7 @@ public class hong2Activity extends AppCompatActivity {
             }
         }
 
-        if (User.diamond[i] == 1) {
+        if (User.nutrena2[i] == 1) {
             naturalButton.setText("nonlike");
 
         }
@@ -66,18 +66,18 @@ public class hong2Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                (User.diamond[i])++;
+                (User.nutrena2[i])++;
 
-                if (User.diamond[i] == 1) {
-                    writeUserlike("diamond", currentUser);
+                if (User.nutrena2[i] == 1) {
+                    writeUserlike("nutrena2", currentUser);
                     naturalButton.setText("nonlike");
-                    User.diamond[i] = 1;
+                    User.nutrena2[i] = 1;
 
                 }
-                else if (User.diamond[i] > 1) {
-                    writeUserunlike("not diamond", currentUser);
+                else if (User.nutrena2[i] > 1) {
+                    writeUserunlike("not nutrena2", currentUser);
                     naturalButton.setText("Basket");
-                    User.diamond[i] = 0;
+                    User.nutrena2[i] = 0;
 
                 }
 

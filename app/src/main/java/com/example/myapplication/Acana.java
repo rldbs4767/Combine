@@ -24,14 +24,14 @@ public class Acana extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Acana.this, Main2Activity.class);
+                Intent intent = new Intent(Acana.this, hong8Activity.class);
                 startActivity(intent);
             }
         });
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Acana.this, Main2Activity.class);
+                Intent intent = new Intent(Acana.this, hong12Activity.class);
                 startActivity(intent);
             }
         });

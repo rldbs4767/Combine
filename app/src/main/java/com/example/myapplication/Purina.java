@@ -24,14 +24,14 @@ public class Purina extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Purina.this, Main2Activity.class);
+                Intent intent = new Intent(Purina.this, hong10Activity.class);
                 startActivity(intent);
             }
         });
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Purina.this, Main2Activity.class);
+                Intent intent = new Intent(Purina.this, hong11Activity.class);
                 startActivity(intent);
             }
         });

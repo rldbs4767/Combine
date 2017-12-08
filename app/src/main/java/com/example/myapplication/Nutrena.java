@@ -24,14 +24,14 @@ public class Nutrena extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Nutrena.this, Main2Activity.class);
+                Intent intent = new Intent(Nutrena.this, hong3Activity.class);
                 startActivity(intent);
             }
         });
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Nutrena.this, Main2Activity.class);
+                Intent intent = new Intent(Nutrena.this, hong9Activity.class);
                 startActivity(intent);
             }
         });

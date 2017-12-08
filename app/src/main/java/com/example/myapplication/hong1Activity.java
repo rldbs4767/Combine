@@ -13,6 +13,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
+//natural
 public class hong1Activity extends AppCompatActivity {
 
     information User = new information();
@@ -21,7 +22,6 @@ public class hong1Activity extends AppCompatActivity {
     FirebaseDatabase database;
     FirebaseAuth firebaseAuth;
 
-    TextView tvMessage;
     TextView explain;
     //관심상품에 담을 상품목록
     Button naturalButton;
@@ -36,7 +36,7 @@ public class hong1Activity extends AppCompatActivity {
 
         i++;
         firebaseAuth = FirebaseAuth.getInstance();
-        tvMessage = (TextView)findViewById(R.id.tv_message);
+
         explain = (TextView)findViewById(R.id.explain);
 
         explain.setText("무게 = 2kg\n 원산지 = 중국\n");

@@ -30,8 +30,6 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
     private TextView textViewUserEmail;
     private Button buttonLogout;
     private TextView textivewDelete;
-    //private TextView textviewlike;
-    //private TextView basketView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,11 +62,6 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         buttonLogout.setOnClickListener(this);
         textivewDelete.setOnClickListener(this);
 
-        //textviewlike.setOnClickListener(this);
-        //basketView.setOnClickListener(this);
-
-
-
     }
 
     @Override
@@ -79,16 +72,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
             finish();
             startActivity(new Intent(this, LoginActivity.class));
         }
-/*        if(view == textviewlike){
 
-            startActivity(new Intent(this, upgradeActivity.class));
-        }
-
-        if(view == basketView){
-
-            startActivity(new Intent(this, BasketActivity.class));
-        }
-*/
         //회원탈퇴를 클릭하면 회원정보를 삭제한다. 삭제전에 컨펌창을 하나 띄워야 겠다.
         if(view == textivewDelete) {
             AlertDialog.Builder alert_confirm = new AlertDialog.Builder(ProfileActivity.this);

@@ -24,7 +24,7 @@ public class Skin extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Skin.this, Main2Activity.class);
+                Intent intent = new Intent(Skin.this, hong2Activity.class);
                 startActivity(intent);
             }
         });
@@ -32,7 +32,7 @@ public class Skin extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Skin.this, Main2Activity.class);
+                Intent intent = new Intent(Skin.this, hong4Activity.class);
                 startActivity(intent);
             }
         });

@@ -23,7 +23,7 @@ public class Diamond extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Diamond.this, Main2Activity.class);
+                Intent intent = new Intent(Diamond.this, hong2Activity.class);
                 startActivity(intent);
             }
         });

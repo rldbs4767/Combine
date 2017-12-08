@@ -12,7 +12,6 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 // main
-
 public class HomeActivity extends AppCompatActivity {
 
     private TextView mTextMessage;

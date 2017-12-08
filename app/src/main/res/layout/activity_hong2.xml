@@ -63,7 +63,7 @@
         android:id="@+id/imageView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/purina1"
+        app:srcCompat="@drawable/diamond"
         app:layout_constraintTop_toTopOf="@+id/guideline18"
         android:layout_marginTop="8dp"
         android:layout_marginLeft="8dp"

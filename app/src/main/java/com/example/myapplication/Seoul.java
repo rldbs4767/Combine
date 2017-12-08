@@ -23,7 +23,7 @@ public class Seoul extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Seoul.this, Main2Activity.class);
+                Intent intent = new Intent(Seoul.this, hong7Activity.class);
                 startActivity(intent);
             }
         });

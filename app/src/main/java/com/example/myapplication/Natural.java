@@ -33,7 +33,7 @@ public class Natural extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Natural.this, Main2Activity.class);
+                Intent intent = new Intent(Natural.this, hong13Activity.class);
                 startActivity(intent);
             }
         });

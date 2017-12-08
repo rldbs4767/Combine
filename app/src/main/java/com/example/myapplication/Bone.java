@@ -24,14 +24,14 @@ public class Bone extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Bone.this, Main2Activity.class);
+                Intent intent = new Intent(Bone.this, hong1Activity.class);
                 startActivity(intent);
             }
         });
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Bone.this, Main2Activity.class);
+                Intent intent = new Intent(Bone.this, hong9Activity.class);
                 startActivity(intent);
             }
         });
