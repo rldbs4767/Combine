@@ -30,8 +30,6 @@ public class data_infActivity extends AppCompatActivity {
     //관심상품에 담을 상품목록
     Button naturalButton;
 
-
-
     public static int i = 0;
 
     @Override
@@ -57,7 +55,6 @@ public class data_infActivity extends AppCompatActivity {
                 break;
             }
         }
-
 
         if(data_num == 1) {
 
@@ -91,10 +88,9 @@ public class data_infActivity extends AppCompatActivity {
 
                         //natural[i]값이 1로 저장이 된다.
                         User.naturallike[i] = 1;
-
                     }
                     //만약, natural품목을 좋아요 버튼을 누른다면,,,
-                    else if (User.naturallike[i] > 1) {
+                    else if (User.naturallike[i] > 1){
 
                         //품목을 싫어하는 함수를 호출
                         writeUserlike("not natural", currentUser);
@@ -104,12 +100,9 @@ public class data_infActivity extends AppCompatActivity {
 
                         //natural[i]값이 0으로 저장이 된다.
                         User.naturallike[i] = 0;
-
                     }
-
                 }
             });
-
         }
         else if(data_num == 2){
 
@@ -136,20 +129,14 @@ public class data_infActivity extends AppCompatActivity {
                         writeUserlike("diamond", currentUser);
                         naturalButton.setText("nonlike");
                         User.diamond[i] = 1;
-
                     }
                     else if (User.diamond[i] > 1) {
                         writeUserlike("not diamond", currentUser);
                         naturalButton.setText("Basket");
                         User.diamond[i] = 0;
-
                     }
-
-
-
                 }
             });
-
         }
         else if(data_num == 3){
 
@@ -166,7 +153,6 @@ public class data_infActivity extends AppCompatActivity {
                 naturalButton.setText("nonlike");
 
             }
-
             naturalButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -177,17 +163,12 @@ public class data_infActivity extends AppCompatActivity {
                         writeUserlike("nutrena", currentUser);
                         naturalButton.setText("nonlike");
                         User.nutrena[i] = 1;
-
                     }
                     else if (User.nutrena[i] > 1) {
                         writeUserlike("not nutrena", currentUser);
                         naturalButton.setText("Basket");
                         User.nutrena[i] = 0;
-
                     }
-
-
-
                 }
             });
         }
@@ -206,7 +187,6 @@ public class data_infActivity extends AppCompatActivity {
                 naturalButton.setText("nonlike");
 
             }
-
             naturalButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -217,20 +197,14 @@ public class data_infActivity extends AppCompatActivity {
                         writeUserlike("the_dog", currentUser);
                         naturalButton.setText("nonlike");
                         User.the_dog[i] = 1;
-
                     }
                     else if (User.the_dog[i] > 1) {
                         writeUserlike("not the_dog", currentUser);
                         naturalButton.setText("Basket");
                         User.the_dog[i] = 0;
-
                     }
-
-
-
                 }
             });
-
         }
         else if(data_num == 5){
 
@@ -246,7 +220,6 @@ public class data_infActivity extends AppCompatActivity {
                 naturalButton.setText("nonlike");
 
             }
-
             naturalButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -257,17 +230,12 @@ public class data_infActivity extends AppCompatActivity {
                         writeUserlike("amio", currentUser);
                         naturalButton.setText("nonlike");
                         User.amio[i] = 1;
-
                     }
                     else if (User.amio[i] > 1) {
                         writeUserlike("not amio", currentUser);
                         naturalButton.setText("Basket");
                         User.amio[i] = 0;
-
                     }
-
-
-
                 }
             });
         }
@@ -286,7 +254,6 @@ public class data_infActivity extends AppCompatActivity {
                 naturalButton.setText("nonlike");
 
             }
-
             naturalButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -297,17 +264,12 @@ public class data_infActivity extends AppCompatActivity {
                         writeUserlike("esbilac", currentUser);
                         naturalButton.setText("nonlike");
                         User.esbilac[i] = 1;
-
                     }
                     else if (User.esbilac[i] > 1) {
                         writeUserlike("not esbilac", currentUser);
                         naturalButton.setText("Basket");
                         User.esbilac[i] = 0;
-
                     }
-
-
-
                 }
             });
         }
@@ -326,7 +288,6 @@ public class data_infActivity extends AppCompatActivity {
                 naturalButton.setText("nonlike");
 
             }
-
             naturalButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -337,17 +298,12 @@ public class data_infActivity extends AppCompatActivity {
                         writeUserlike("seoul", currentUser);
                         naturalButton.setText("nonlike");
                         User.seoul[i] = 1;
-
                     }
                     else if (User.seoul[i] > 1) {
                         writeUserlike("not seoul", currentUser);
                         naturalButton.setText("Basket");
                         User.seoul[i] = 0;
-
                     }
-
-
-
                 }
             });
         }
@@ -366,7 +322,6 @@ public class data_infActivity extends AppCompatActivity {
                 naturalButton.setText("nonlike");
 
             }
-
             naturalButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -377,17 +332,12 @@ public class data_infActivity extends AppCompatActivity {
                         writeUserlike("acana", currentUser);
                         naturalButton.setText("nonlike");
                         User.acana[i] = 1;
-
                     }
                     else if (User.acana[i] > 1) {
                         writeUserlike("not acana", currentUser);
                         naturalButton.setText("Basket");
                         User.acana[i] = 0;
-
                     }
-
-
-
                 }
             });
         }
@@ -406,7 +356,6 @@ public class data_infActivity extends AppCompatActivity {
                 naturalButton.setText("nonlike");
 
             }
-
             naturalButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -417,20 +366,14 @@ public class data_infActivity extends AppCompatActivity {
                         writeUserlike("nutrena2", currentUser);
                         naturalButton.setText("nonlike");
                         User.nutrena2[i] = 1;
-
                     }
                     else if (User.nutrena2[i] > 1) {
                         writeUserlike("not nutrena2", currentUser);
                         naturalButton.setText("Basket");
                         User.nutrena2[i] = 0;
-
                     }
-
-
-
                 }
             });
-
         }
         else if(data_num == 10){
 
@@ -447,7 +390,6 @@ public class data_infActivity extends AppCompatActivity {
                 naturalButton.setText("nonlike");
 
             }
-
             naturalButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -458,20 +400,14 @@ public class data_infActivity extends AppCompatActivity {
                         writeUserlike("purina", currentUser);
                         naturalButton.setText("nonlike");
                         User.purina[i] = 1;
-
                     }
                     else if (User.purina[i] > 1) {
                         writeUserlike("not purina", currentUser);
                         naturalButton.setText("Basket");
                         User.purina[i] = 0;
-
                     }
-
-
-
                 }
             });
-
         }
         else if(data_num == 11){
 
@@ -488,7 +424,6 @@ public class data_infActivity extends AppCompatActivity {
                 naturalButton.setText("nonlike");
 
             }
-
             naturalButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -505,14 +440,9 @@ public class data_infActivity extends AppCompatActivity {
                         writeUserlike("not purina2", currentUser);
                         naturalButton.setText("Basket");
                         User.purina2[i] = 0;
-
                     }
-
-
-
                 }
             });
-
 
         }
         else if(data_num == 12){
@@ -530,7 +460,6 @@ public class data_infActivity extends AppCompatActivity {
                 naturalButton.setText("nonlike");
 
             }
-
             naturalButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -541,17 +470,12 @@ public class data_infActivity extends AppCompatActivity {
                         writeUserlike("acana2", currentUser);
                         naturalButton.setText("nonlike");
                         User.acana2[i] = 1;
-
                     }
                     else if (User.acana2[i] > 1) {
                         writeUserlike("not acana2", currentUser);
                         naturalButton.setText("Basket");
                         User.acana2[i] = 0;
-
                     }
-
-
-
                 }
             });
 
@@ -571,7 +495,6 @@ public class data_infActivity extends AppCompatActivity {
                 naturalButton.setText("nonlike");
 
             }
-
             naturalButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -582,15 +505,12 @@ public class data_infActivity extends AppCompatActivity {
                         writeUserlike("natural2", currentUser);
                         naturalButton.setText("nonlike");
                         User.natural2like[i] = 1;
-
                     }
                     else if (User.natural2like[i] > 1) {
                         writeUserlike("not natural2", currentUser);
                         naturalButton.setText("Basket");
                         User.natural2like[i] = 0;
-
                     }
-
                 }
             });
 
@@ -606,16 +526,5 @@ public class data_infActivity extends AppCompatActivity {
         //데이터를 데이터베이스에 입력함.
         FirebaseDatabase.getInstance().getReference("like?").child(formattedDate).setValue(user);
     }
-/*
-    //품목을 취소하는 데이터베이스에 입력하기 위한 함수
-    private void writeUserunlike(String item, String email)
-    {
-        User user = new User(email,item);
-        Calendar c = Calendar.getInstance();
-        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"); //날짜
-        String formattedDate = df.format(c.getTime());
-        //데이터를 데이터베이스에 입력함.
-        FirebaseDatabase.getInstance().getReference("like?").child(formattedDate).setValue(user);
-    }
-    */
+
 }
