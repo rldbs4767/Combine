@@ -40,19 +40,7 @@
         <activity android:name=".Bone" />
         <activity android:name=".Skin" />
         <activity android:name=".Prescription" />
-        <activity android:name=".hong1Activity" />
-        <activity android:name=".hong2Activity" />
-        <activity android:name=".hong3Activity" />
-        <activity android:name=".hong4Activity" />
-        <activity android:name=".hong5Activity" />
-        <activity android:name=".hong6Activity" />
-        <activity android:name=".hong7Activity" />
-        <activity android:name=".hong8Activity" />
-        <activity android:name=".hong9Activity" />
-        <activity android:name=".hong10Activity" />
-        <activity android:name=".hong11Activity" />
-        <activity android:name=".hong12Activity" />
-        <activity android:name=".hong13Activity"></activity>
+        <activity android:name=".data_infActivity" />
     </application>
 
 </manifest>

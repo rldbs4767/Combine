@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
+import static com.example.myapplication.HomeActivity.data_num;
 //(function) -> natural balance 화면
 public class Natural extends AppCompatActivity {
 
@@ -25,15 +25,16 @@ public class Natural extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Intent intent = new Intent(Natural.this, hong1Activity.class);
+                data_num = 1;
+                Intent intent = new Intent(Natural.this, data_infActivity.class);
                 startActivity(intent);
             }
         });
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Natural.this, hong13Activity.class);
+                data_num = 13;
+                Intent intent = new Intent(Natural.this, data_infActivity.class);
                 startActivity(intent);
             }
         });

@@ -10,7 +10,9 @@ import android.widget.CheckBox;
 import android.widget.TextView;
 import android.widget.Toast;
 
-//(1:1) dog information  class
+import static com.example.myapplication.HomeActivity.data_num;
+
+//(1:1) dog information 선택별 맞춤화면 구성
 
 public class Dog_information extends AppCompatActivity {
     private void DisplayToast(String msg)
@@ -34,6 +36,7 @@ public class Dog_information extends AppCompatActivity {
 
         Button button = (Button)findViewById(R.id.button);
 
+        //체크박스들 선언
         final CheckBox check1 = (CheckBox) findViewById(R.id.check1);
         final CheckBox check2 = (CheckBox) findViewById(R.id.check2);
         final CheckBox check3 = (CheckBox) findViewById(R.id.check3);
@@ -52,6 +55,7 @@ public class Dog_information extends AppCompatActivity {
         final CheckBox check13 = (CheckBox) findViewById(R.id.checkF3);
 
 
+        //첫번째 줄 (나이) 연령대 중복클릭 방지
         check2.setOnClickListener(new CheckBox.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -61,6 +65,7 @@ public class Dog_information extends AppCompatActivity {
                 }
             }});
 
+        //체크박스 클릭리스너
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -68,28 +73,31 @@ public class Dog_information extends AppCompatActivity {
 
                 if (((check1.isChecked() == true && check4.isChecked()==true)&& check10.isChecked()==true) && check11.isChecked()==true ){
                     //main2->아카나1 성분창으로
-                    Intent intent = new Intent(Dog_information.this, hong8Activity.class);
+                    data_num = 8;
+                    Intent intent = new Intent(Dog_information.this, data_infActivity.class);
                     startActivity(intent);
                 }
                 else if (((check2.isChecked() == true && check5.isChecked()==true) && check9.isChecked()==true) && check11.isChecked()==true ) {
                     //main2->아카나2 성분창으로
-                    Intent intent = new Intent(Dog_information.this, hong12Activity.class);
+                    data_num = 12;
+                    Intent intent = new Intent(Dog_information.this, data_infActivity.class);
                     startActivity(intent);
                 }
                 else if (((check3.isChecked() == true && (check4.isChecked()==true || check5.isChecked()== true)) && check10.isChecked()==true) && check11.isChecked()==true  ) {
                     //main2->뉴트리나2 성분창으로
-                    Intent intent = new Intent(Dog_information.this, hong9Activity.class);
+                    data_num = 9;
+                    Intent intent = new Intent(Dog_information.this, data_infActivity.class);
                     startActivity(intent);
                 }
                 else if (((check3.isChecked() == true && check6.isChecked()==true) && check10.isChecked()==true) && check11.isChecked()==true ) {
                     //main2->뉴트리나1 성분창으로
-                    Intent intent = new Intent(Dog_information.this, hong3Activity.class);
+                    data_num = 3;
+                    Intent intent = new Intent(Dog_information.this, data_infActivity.class);
                     startActivity(intent);
                 }
                 else{
                     DisplayToast("None information");
                 }
-
 
             }
         });

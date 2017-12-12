@@ -1,8 +1,8 @@
 package com.example.myapplication;
 
-/**
- * 품목을 저장해놓음.
- */
+
+// 품목을 저장해놓음.
+
 
 public class information {
 

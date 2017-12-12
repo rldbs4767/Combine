@@ -15,17 +15,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-/**
- * A simple {@link Fragment} subclass.
- */
 
-//(function)
+//(function)기능별 화면 셋팅
 
 public class FunctionFragment extends Fragment {
 
 
     public FunctionFragment() {
-        // Required empty public constructor
+
     }
 
 
@@ -33,19 +30,21 @@ public class FunctionFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_function,container,false);
+        //기능목록
         final String[] menuItems = {"Obesity","Pregnancy","Grain Free","Bone","Skin","Prescription"};
 
         ListView listView = view.findViewById(R.id.functionFragment);
 
+        //리스트뷰에 들어가는 항목 셋팅
         ArrayAdapter<String> listViewAdapter = new ArrayAdapter<String>(
                 getActivity(),
                 R.layout.function_list,
                 R.id.textViewLabel,
-                //      android.R.layout.simple_list_item_1,
                 menuItems
         );
         listView.setAdapter(listViewAdapter);
 
+        //리스트뷰 클릭리스너
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             public void onItemClick(AdapterView<?> adapterView, View view,int position,long l){

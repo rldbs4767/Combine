@@ -15,9 +15,9 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 
-/*
-                    비밀번호 분실 시 비밀번호를 찾아주는 화면.
- */
+
+//비밀번호 분실 시 비밀번호를 찾아주는 화면.
+
 
 public class FindActivity extends AppCompatActivity implements View.OnClickListener{
     private static final String TAG = "FindActivity";

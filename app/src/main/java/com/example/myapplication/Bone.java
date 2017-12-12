@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import static com.example.myapplication.HomeActivity.data_num;
 
 public class Bone extends AppCompatActivity {
 
@@ -24,14 +25,16 @@ public class Bone extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Bone.this, hong1Activity.class);
+                data_num = 1;
+                Intent intent = new Intent(Bone.this, data_infActivity.class);
                 startActivity(intent);
             }
         });
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Bone.this, hong9Activity.class);
+                data_num = 9;
+                Intent intent = new Intent(Bone.this, data_infActivity.class);
                 startActivity(intent);
             }
         });

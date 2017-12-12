@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import static com.example.myapplication.HomeActivity.data_num;
+
 public class Amio extends AppCompatActivity {
 
     @Override
@@ -23,7 +25,8 @@ public class Amio extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Amio.this, hong5Activity.class);
+                data_num = 5;
+                Intent intent = new Intent(Amio.this, data_infActivity.class);
                 startActivity(intent);
             }
         });

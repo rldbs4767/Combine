@@ -10,11 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 
-/**
- * A simple {@link Fragment} subclass.
- */
-
-//(function)
+//(function)기능별 화면 구성
 public class MatchFragment extends Fragment {
 
     public MatchFragment() {

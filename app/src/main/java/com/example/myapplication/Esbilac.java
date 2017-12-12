@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
+import static com.example.myapplication.HomeActivity.data_num;
 public class Esbilac extends AppCompatActivity {
 
     @Override
@@ -23,7 +23,8 @@ public class Esbilac extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Esbilac.this, hong6Activity.class);
+                data_num = 6;
+                Intent intent = new Intent(Esbilac.this, data_infActivity.class);
                 startActivity(intent);
             }
         });

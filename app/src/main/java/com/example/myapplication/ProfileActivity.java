@@ -16,9 +16,6 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-/**
- * Created by gimgiyun on 2017. 11. 19..
- */
 
 /*
                 사용자가 접속한 아이디를 알려주고 접속하고 있음을 알려주는 화면

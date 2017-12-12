@@ -12,9 +12,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-/**
- * Created by 강미 on 2017-12-01.
- */
 
 //(Brand) 리스트 창 구성
 

@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
+import static com.example.myapplication.HomeActivity.data_num;
 public class Purina extends AppCompatActivity {
 
     @Override
@@ -24,14 +24,16 @@ public class Purina extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Purina.this, hong10Activity.class);
+                data_num = 10;
+                Intent intent = new Intent(Purina.this, data_infActivity.class);
                 startActivity(intent);
             }
         });
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Purina.this, hong11Activity.class);
+                data_num = 11;
+                Intent intent = new Intent(Purina.this, data_infActivity.class);
                 startActivity(intent);
             }
         });

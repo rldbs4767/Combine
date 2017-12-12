@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
+import static com.example.myapplication.HomeActivity.data_num;
 public class Pregnancy extends AppCompatActivity {
 
     @Override
@@ -23,7 +23,8 @@ public class Pregnancy extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Pregnancy.this, hong4Activity.class);
+                data_num = 4;
+                Intent intent = new Intent(Pregnancy.this, data_infActivity.class);
                 startActivity(intent);
             }
         });

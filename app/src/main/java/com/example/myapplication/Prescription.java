@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
+import static com.example.myapplication.HomeActivity.data_num;
 public class Prescription extends AppCompatActivity {
 
     @Override
@@ -24,14 +24,16 @@ public class Prescription extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Prescription.this, hong12Activity.class);
+                data_num = 12;
+                Intent intent = new Intent(Prescription.this, data_infActivity.class);
                 startActivity(intent);
             }
         });
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Prescription.this, hong11Activity.class);
+                data_num = 11;
+                Intent intent = new Intent(Prescription.this, data_infActivity.class);
                 startActivity(intent);
             }
         });

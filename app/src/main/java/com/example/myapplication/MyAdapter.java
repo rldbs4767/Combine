@@ -12,9 +12,6 @@ import java.util.List;
 import static com.example.myapplication.BasketActivity.i;
 import static com.example.myapplication.BasketActivity.i;
 
-/**
- * Created by gimgiyun on 2017. 11. 29..
- */
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 

@@ -1,8 +1,6 @@
 package com.example.myapplication;
 
-/**
- * Created by gimgiyun on 2017. 11. 29..
- */
+
 
 public class Basket {
 

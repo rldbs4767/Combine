@@ -13,10 +13,7 @@ import android.R.id.*;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-/**
- * A simple {@link Fragment} subclass.
- */
-//(brand)
+//(brand) 브랜드 화면 구성
 
 public class MenuFragment extends Fragment {
 
@@ -56,6 +53,7 @@ public class MenuFragment extends Fragment {
         adapter.addItem(ContextCompat.getDrawable(getActivity(), R.drawable.one_meal),
                 "One meal","wet dip") ;
 
+        //아이템 클릭 리스너
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             public void onItemClick(AdapterView<?> adapterView, View view,int position,long l){

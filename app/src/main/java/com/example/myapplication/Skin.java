@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
+import static com.example.myapplication.HomeActivity.data_num;
 public class Skin extends AppCompatActivity {
 
     @Override
@@ -24,7 +24,8 @@ public class Skin extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Skin.this, hong2Activity.class);
+                data_num = 2;
+                Intent intent = new Intent(Skin.this, data_infActivity.class);
                 startActivity(intent);
             }
         });
@@ -32,7 +33,8 @@ public class Skin extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Skin.this, hong4Activity.class);
+                data_num = 4;
+                Intent intent = new Intent(Skin.this, data_infActivity.class);
                 startActivity(intent);
             }
         });

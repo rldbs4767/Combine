@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-//(home)
+//home화면
 
 public class HomeFragment extends Fragment {
 

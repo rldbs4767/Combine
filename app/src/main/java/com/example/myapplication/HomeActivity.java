@@ -11,13 +11,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-// main
+// main 액티비티
 public class HomeActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
 
+    public static int data_num = 0;
 
-
+    //하단 네비게이션바를 이용한 화면구성
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 

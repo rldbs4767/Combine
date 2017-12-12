@@ -2,25 +2,17 @@ package com.example.myapplication;
 
 import android.graphics.drawable.Drawable;
 
-/**
- * Created by 강미 on 2017-11-28.
- */
 
 //(Brand) custom list에 들어가는 데이터 셋팅
 
 public class DataItem {
- /*  int resIdThumbnail;
-    String brandName;
 
-    public DataItem(int resIdThumbnail, String brandName) {
-        this.resIdThumbnail = resIdThumbnail;
-        this.brandName = brandName;
-    }
-    */
+    //list에 들어갈 그림,타이틀,상세텍스트 선언
     private Drawable iconDrawable;
     private  String titleStr;
     private  String descStr;
 
+    //셋팅
     public void setIcon(Drawable icon) {
         iconDrawable = icon ;
     }
@@ -31,6 +23,7 @@ public class DataItem {
         descStr = desc ;
     }
 
+    //아이콘을 넣음
     public Drawable getIcon() {
         return this.iconDrawable ;
     }

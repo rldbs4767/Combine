@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import static com.example.myapplication.HomeActivity.data_num;
 
 public class GrainFree extends AppCompatActivity {
 
@@ -24,14 +25,16 @@ public class GrainFree extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(GrainFree.this, hong3Activity.class);
+                data_num = 3;
+                Intent intent = new Intent(GrainFree.this, data_infActivity.class);
                 startActivity(intent);
             }
         });
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(GrainFree.this, hong8Activity.class);
+                data_num = 8;
+                Intent intent = new Intent(GrainFree.this, data_infActivity.class);
                 startActivity(intent);
             }
         });
