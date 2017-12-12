@@ -1,7 +1,7 @@
 package com.example.myapplication;
 
 /**
- * Created by gimgiyun on 2017. 11. 28..
+ * 품목을 저장해놓음.
  */
 
 public class information {
@@ -20,6 +20,5 @@ public class information {
     public static int[] purina2 = new int[100];
     public static int[] acana = new int[100];
     public static int[] acana2 = new int[100];
-
 
 }

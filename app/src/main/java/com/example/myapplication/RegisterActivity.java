@@ -17,6 +17,9 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+/*
+                                     회원가입화면
+ */
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
 
     //define view objects
@@ -105,11 +108,13 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     public void onClick(View view) {
         if(view == buttonSignup) {
             //TODO
+            //회원가입을 누를 시 registerUser클래스에서 사용자의 정보를 입력받는다.
             registerUser();
         }
 
         if(view == textviewSingin) {
             //TODO
+            //이미 어플의 회원인 경우, 로그인화면으로 이동.
             startActivity(new Intent(this, LoginActivity.class)); //추가해 줄 로그인 액티비티
 
         }

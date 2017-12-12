@@ -20,6 +20,10 @@ import com.google.firebase.auth.FirebaseUser;
  * Created by gimgiyun on 2017. 11. 19..
  */
 
+/*
+                사용자가 접속한 아이디를 알려주고 접속하고 있음을 알려주는 화면
+
+ */
 public class ProfileActivity extends AppCompatActivity implements View.OnClickListener{
 
     private static final String TAG = "ProfileActivity";
@@ -67,13 +71,13 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
     @Override
     public void onClick(View view){
         if(view == buttonLogout) {
-
+            //로그아웃 버튼을 누르면, 로그아웃이 되면서 다시 로그인화면으로 전환된다.
             firebaseAuth.signOut();
             finish();
             startActivity(new Intent(this, LoginActivity.class));
         }
 
-        //회원탈퇴를 클릭하면 회원정보를 삭제한다. 삭제전에 컨펌창을 하나 띄워야 겠다.
+        //회원탈퇴를 클릭하면 회원정보를 삭제한다. 삭제전에 컨펌창을 하나 띄워서 한 번더 계정의 삭제여부를 묻는다.
         if(view == textivewDelete) {
             AlertDialog.Builder alert_confirm = new AlertDialog.Builder(ProfileActivity.this);
 

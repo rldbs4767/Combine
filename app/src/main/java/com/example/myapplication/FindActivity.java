@@ -15,8 +15,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 
-/**
- * Created by gimgiyun on 2017. 11. 19..
+/*
+                    비밀번호 분실 시 비밀번호를 찾아주는 화면.
  */
 
 public class FindActivity extends AppCompatActivity implements View.OnClickListener{
@@ -48,6 +48,7 @@ public class FindActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
+        //비밀번호 찾기버튼을 눌렀을 경우,
         if(view == buttonFind){
             progressDialog.setMessage("처리중입니다. 잠시 기다려 주세요...");
             progressDialog.show();

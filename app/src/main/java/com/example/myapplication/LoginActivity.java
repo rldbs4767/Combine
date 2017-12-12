@@ -61,6 +61,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
             //그리고 홈화면 액티비티를 연다.
             startActivity(new Intent(getApplicationContext(), HomeActivity.class));
         }
+
         //initializing views
         editTextEmail = (EditText) findViewById(R.id.editTextEmail);
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
@@ -71,6 +72,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         Loginbutton = (Button) findViewById(R.id.GoogleLogin);
         progressDialog = new ProgressDialog(this);
 
+        //구글계정의 연동을 위한 설정.
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
                 .requestEmail()
@@ -91,18 +93,19 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
             }
         });
 
+
         //button click event
         buttonSignin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                //로그인 버튼을 눌렀을 떄
                 userLogin();
             }
         });
         textviewSingin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                //회원가입 화면으로 이동
                 finish();
                 Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
                 startActivity(intent);
@@ -111,6 +114,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         textviewFindPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //비밀번호를 분실하였을 때, 비밀번호 찾기 화면으로 이동
                 finish();
                 Intent intent = new Intent(LoginActivity.this, FindActivity.class);
                 startActivity(intent);
